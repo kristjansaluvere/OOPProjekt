@@ -10,14 +10,14 @@ public class HoroskoobiGenereerija {
     public Horoskoop genereerija(List<HoroskoobiKirje> horoskoop, Kasutaja kasutaja) {
         List<HoroskoobiKirje> sobivHoroskoop = new ArrayList<>();
 
-        // kas tähtkuju ja kategooria klapivad sisendiga
+        // Kas tähtkuju ja kategooria klapivad sisendiga
         for (HoroskoobiKirje rida : horoskoop) {
             if (rida.getTähtkuju().equalsIgnoreCase(kasutaja.getTähtkuju()) && rida.getKategooria().equalsIgnoreCase(rida.getKategooria())) {
                 sobivHoroskoop.add(rida);
             }
         }
 
-        // vale sisendi puhul
+        // Vale sisendi puhul
         if (sobivHoroskoop.isEmpty()) {
             return new Horoskoop(kasutaja,"Kahjuks ei leidnud horoskoopi. Kontrolli sisendit!");
         }

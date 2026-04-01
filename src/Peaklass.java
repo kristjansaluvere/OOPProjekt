@@ -23,7 +23,7 @@ public class Peaklass {
             return;
         }
 
-        System.out.println("Horoskoop:");
+        System.out.println("Horoskoop: ");
 
         System.out.print("Sisesta oma nimi: ");
         String nimi = scanner.nextLine().trim();

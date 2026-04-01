@@ -35,7 +35,7 @@ public class AndmeHoidla {
         return horoskoobiKirjed;
     }
 
-    // kui vaja, siis nimekiri kõikidest kategooriatest
+    // Kui vaja, siis nimekiri kõikidest kategooriatest
     public List<String> getOlemasolevadKategooriad() {
         List<String> kategooriad = new ArrayList<>();
         for (HoroskoobiKirje kirje : horoskoobiKirjed) {
