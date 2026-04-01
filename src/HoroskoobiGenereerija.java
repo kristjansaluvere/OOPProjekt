@@ -7,21 +7,25 @@ import java.util.Random;
 public class HoroskoobiGenereerija {
     private Random random = new Random();
 
-    public Horoskoop genereerija(List<Horoskoop> horoskoobid, String kasutajaTähtkuju, String kasutajaKategooria) {
-        List<Horoskoop> sobivHoroskoop = new ArrayList<>();
+    public Horoskoop genereerija(List<HoroskoobiKirje> horoskoop, Kasutaja kasutaja) {
+        List<HoroskoobiKirje> sobivHoroskoop = new ArrayList<>();
 
         // kas tähtkuju ja kategooria klapivad sisendiga
-        for (Horoskoop h : horoskoobid) {
-            if (h.getTähtkuju().equalsIgnoreCase(kasutajaTähtkuju) && h.getKategooria().equalsIgnoreCase(kasutajaKategooria)) {
-                sobivHoroskoop.add(h);
+        for (HoroskoobiKirje rida : horoskoop) {
+            if (rida.getTähtkuju().equalsIgnoreCase(kasutaja.getTähtkuju()) && rida.getKategooria().equalsIgnoreCase(rida.getKategooria())) {
+                sobivHoroskoop.add(rida);
             }
         }
 
         // vale sisendi puhul
         if (sobivHoroskoop.isEmpty()) {
-            return new Horoskoop(kasutajaTähtkuju, kasutajaKategooria, "Kahjuks ei leidnud horoskoopi. Kontrolli sisendit!");
+            return new Horoskoop(kasutaja,"Kahjuks ei leidnud horoskoopi. Kontrolli sisendit!");
         }
+
+        // Genereerime suvaarvu kaudu isikule suvalise ennustuse.
         int randomIndeks = random.nextInt(sobivHoroskoop.size());
-        return sobivHoroskoop.get(randomIndeks);
+        HoroskoobiKirje suvaEnnustus = sobivHoroskoop.get(randomIndeks);
+
+        return new Horoskoop(kasutaja, suvaEnnustus.getSõnum());
     }
 }

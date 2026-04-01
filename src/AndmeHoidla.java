@@ -6,11 +6,8 @@ import java.util.Scanner;
 
 /* Loeb ja hoiustab andmeid */
 
-
-// tavaline andmete lugemine failist, nothing fancy
-// vajadusel muuta andmete faili?
 public class AndmeHoidla {
-    private List<Horoskoop> horoskoobid = new ArrayList<>();
+    private List<HoroskoobiKirje> horoskoobiKirjed = new ArrayList<>();
     private String failiNimi = "horoskoobid.csv";
 
     public void loeFailist() throws FileNotFoundException {
@@ -29,20 +26,20 @@ public class AndmeHoidla {
                     String kategooria = osad[1].trim();
                     String sõnum = osad[2].trim();
 
-                    horoskoobid.add(new Horoskoop(tähtkuju, kategooria, sõnum));
+                    horoskoobiKirjed.add(new HoroskoobiKirje(tähtkuju, kategooria, sõnum));
                 }
             }
         }
     }
-    public List<Horoskoop> getHoroskoobid() {
-        return horoskoobid;
+    public List<HoroskoobiKirje> getHoroskoobiKirjed() {
+        return horoskoobiKirjed;
     }
 
     // kui vaja, siis nimekiri kõikidest kategooriatest
     public List<String> getOlemasolevadKategooriad() {
         List<String> kategooriad = new ArrayList<>();
-        for (Horoskoop h : horoskoobid) {
-            String kategooria = h.getKategooria().toLowerCase();
+        for (HoroskoobiKirje kirje : horoskoobiKirjed) {
+            String kategooria = kirje.getKategooria().toLowerCase();
             if (!kategooriad.contains(kategooria)) {
                 kategooriad.add(kategooria);
             }
