@@ -26,20 +26,24 @@ Koos programmiga (ja vajalike lisafailidega) tuleb esitada ka oma rühmatöö ki
     /* Kasutusjuhis:
     *  Veendu, et kõik failid oleksid olemas. 
     *  Käivita peaklass ning järgi terminalis juhiseid ning seejärel sisesta andmed.
+    *  Kui peaks ilmuma veateade, et faili ei leita, siis veendu, et working directory oleks juurkaust mitte src.
     */
 
     /* Projekti tegemise protsessi kirjeldus (erinevad etapid ja rühmaliikmete osalemine neis):
-    *  Kõigepealt mõtlesime idee välja, millele ei kulunud palju aega. Seejärel jaotasime töö ära. 
+    *  Kõigepealt mõtlesime idee välja, millele ei kulunud palju aega. Seejärel panime plaani paika ning jaotasime töö ära.
+    *  Töö kujunemine:
     *  Kõigepealt loodi Andmehoidla ja HoroskoobiGenereerija. Samuti koos nendega tulid ka andmed.
+    *  Seejärel lõime klassid Horoskoop, Kasutaja ning HoroskoobiKirjed ning viimasena panime kõik kokku peaklassis.
     */
    
     /* Iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt):
     *  Kristjan - AndmeHoidla (samuti csv faili andmed), HoroskoobiGenereerija ja 1/2 Horoskoop (~4 tundi)
-    *  Kristofer - Kasutaja, Horoskoop, HoroskoobiKirje ja Peaklass ()
+    *  Kristofer - Kasutaja, Horoskoop, HoroskoobiKirje ja Peaklass (~5 tundi)
     */
 
     /* Tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust):
     *  Programmi töökindluse tagamine.
+    *  Failide töötlemine (sisend/väljund)
     */
 
     /* Hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist):
@@ -49,5 +53,6 @@ Koos programmiga (ja vajalike lisafailidega) tuleb esitada ka oma rühmatöö ki
     */
 
     /* Selgitus ja/või näiteid, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt
-    * Andmehoidla ja HoroskoobiGenereerijat testiti algselt Peaklassis, et veenduda andmete korrektsuses.
+    *  Andmehoidla ja HoroskoobiGenereerijat testiti algselt Peaklassis, et veenduda andmete korrektsuses.
+    *  Klasse Kasutaja, Horoskoop ning HoroskoobiKirje sai testitud alguses toorete andmetega (ilma failist lugemiseta) ning seejärel kõike koos peaklassis.
     */
