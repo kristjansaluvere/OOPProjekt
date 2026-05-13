@@ -84,7 +84,7 @@ public class Peaklass extends Application {
     }
 
     private void kuvaAlgusVaade() {
-        juur.getChildren().removeIf(node -> !(node instanceof ImageView));
+        juur.getChildren().removeIf(node -> !(node instanceof ImageView)); // Eemaldab vaatest vana valge kasti
 
         VBox kast = looValgeKast();
         kast.setMaxWidth(500);
@@ -102,7 +102,7 @@ public class Peaklass extends Application {
     private void kuvaPohiVaade() {
         juur.setOnMouseClicked(null);
 
-        juur.getChildren().removeIf(node -> !(node instanceof ImageView)); // Eemaldab vaatest kõik peale valge kasti
+        juur.getChildren().removeIf(node -> !(node instanceof ImageView)); // Eemaldab vaatest vana valge kasti
 
         VBox kast = looValgeKast();
         kast.setMaxWidth(560);
