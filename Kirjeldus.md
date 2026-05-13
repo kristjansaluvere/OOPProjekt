@@ -43,7 +43,7 @@
 *  Kristjan - Esimeses etapis AndmeHoidla (samuti csv faili andmed), HoroskoobiGenereerija ja 1/2 Horoskoop.
 *  Teises etapis erinditöötlus ja ajaloo faili kirjutamise loogika (~7 tundi).
 *  Kristofer - Esimese etapis Kasutaja, Horoskoop, HoroskoobiKirje ja Peaklass.
-*  Teises etapis graaflise kasutajaliidese loomine ja integreerimine varasema koodiga. (~ tundi).
+*  Teises etapis graaflise kasutajaliidese loomine ja integreerimine varasema koodiga. (~7 tundi).
 */
 
 /* Tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust):
