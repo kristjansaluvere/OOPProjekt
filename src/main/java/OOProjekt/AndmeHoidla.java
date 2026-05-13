@@ -1,3 +1,4 @@
+package OOProjekt;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 public class AndmeHoidla {
     private List<HoroskoobiKirje> horoskoobiKirjed = new ArrayList<>();
-    private String failiNimi = "/horoskoobid.csv";
+    private String failiNimi = "horoskoobid.csv";
 
     public void loeFailist() throws IOException {
         File fail =  new File(failiNimi);

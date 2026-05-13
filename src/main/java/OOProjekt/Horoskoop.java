@@ -1,3 +1,5 @@
+package OOProjekt;
+
 public class Horoskoop {
     private Kasutaja kasutaja;
     private String sõnum;

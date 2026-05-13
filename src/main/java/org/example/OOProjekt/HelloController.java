@@ -1,4 +1,4 @@
-package org.example.horoskoobigeneraator;
+package org.example.OOProjekt;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

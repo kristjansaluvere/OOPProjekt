@@ -1,1 +1,1 @@
-rootProject.name = "HoroskoobiGeneraator"
+rootProject.name = "OOProjekt"

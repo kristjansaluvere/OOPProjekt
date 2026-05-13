@@ -1,3 +1,5 @@
+package OOProjekt;
+
 public class Kasutaja {
     private String nimi;
     private String tähtkuju;

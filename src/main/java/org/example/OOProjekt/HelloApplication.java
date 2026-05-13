@@ -1,4 +1,4 @@
-package org.example.horoskoobigeneraator;
+package org.example.OOProjekt;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

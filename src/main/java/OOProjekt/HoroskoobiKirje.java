@@ -1,3 +1,4 @@
+package OOProjekt;
 /* Loob objekti, kus hoiustatakse faili ühte konkreetset ennustust.*/
 
 public class HoroskoobiKirje {
